@@ -5,6 +5,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .header {
@@ -38,6 +39,7 @@ a {
 
 }               /* header */
 
+/*---------------------------------------*/
 .about-top { 
     display: flex;
     background-color: #1F2937;
@@ -97,15 +99,15 @@ button {
     max-width: 40vh;
 }               /* top */
 
+/*---------------------------------------*/
 .info {
     display: flex;
     flex-direction: column;
     background-color: white;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-
-}
+    padding: 50px 0;
+}               /* info */
 
 .info-header {
     display: flex;
@@ -114,16 +116,15 @@ button {
     font-weight: 1000;
     margin-bottom: 42px;
     text-align: center;
-}
+}               /* info */
 
 .card-container {
     display: flex;
-    height: 150px;
     justify-content: center;
     gap: 32px;
     padding-bottom: 50px;
     flex-wrap: wrap;
-}
+}               /* info */
 
 .card-cont {
     display: flex;
@@ -132,7 +133,7 @@ button {
     height: 212px;
     min-height: 0;
     flex-wrap: row;
-}
+}               /* info */
 
 .card {
     display: flex;
@@ -141,10 +142,53 @@ button {
     width: 150px;
     height: 150px;
     flex-shrink: 0;
-}
+}               /* info */
 
 .subtext {
     display: flex;
     text-align: center;
     margin-top: 8px;
+}               /* info */
+/*------------------------------------------*/
+.quote-container {
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    padding: 50px ;
+}               /* quote */
+
+.quote-cont {
+    display: flex;
+    flex-direction: column;
+    width: 820px;
+}               /* quote */
+
+.quote {
+    display: flex;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    margin-bottom: 8px;
+}               /* quote */
+
+.author {
+    display: flex;
+    align-self: flex-end;
+    font-weight: 900;
+}               /* quote */
+
+/*------------------------------------------*/
+
+.signup {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bluecard {
+    display: flex;
+    background-color: #3882F6;
+    padding: 20px 0;
 }
