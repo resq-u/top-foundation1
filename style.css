@@ -6,6 +6,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     box-sizing: border-box;
+    box-shadow: none;
 }
 
 .header {
@@ -190,5 +191,45 @@ button {
 .bluecard {
     display: flex;
     background-color: #3882F6;
-    padding: 20px 0;
+    padding: 40px;
+    width: 800px;
+    border-radius: 8px;
+    color: #F9FAF8;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.call-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.call {
+    display: flex;
+    font-weight: 900;
+}
+
+.call-sub {
+    display: flex;
+    color:#E5E7EB;
+}
+
+button#two {
+    display: flex;
+    border-color: white;
+    box-shadow: none;
+    align-self: center;
+}
+
+.footer {
+    display: flex;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
