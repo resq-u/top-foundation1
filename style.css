@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,8 +11,8 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
-    padding: 16px 30vh;
-    
+    padding: 16px 16px;
+    min-width: 0;
 }               /* header */
 
 .logo {
@@ -28,6 +27,7 @@ ul {
     margin: 0;
     padding: 0;
     gap: 24px;
+    justify-content: flex-end;
 }               /* header */
 
 a {
@@ -38,45 +38,52 @@ a {
 }               /* header */
 
 .about-top {
+    flex: 1 1 0;
     display: flex;
     background-color: #1F2937;
-    justify-content: space-between;
-    padding: 7vh 30vh;
-    height: 230px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
     gap: 48px;
-}
+    min-width: 0;
+    min-height: 0;
+}               /* top */
 
 .about {
-    flex: 1;
+    flex: 1 1 0;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 400px;
     gap: 16px;
-}
+    min-width: 230;
+    min-height: 290;
+    max-width: 40vh;
+}               /* top */
 
 .main {
     font-size: 48px;
     font-weight: 1000;
     color: #F9FAF8;
-}
+}               /* top */
 
 .sub {
     color: #E5E7EB;
 
-}
+}               /* top */
 
 .image {
-    flex: 1;
+    flex: 1 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: grey;
     font-size: 18px;
     color: #E5E7EB;
-    height: 100%;
-    
-}
+    height: 230px;
+    min-width: 265px;
+    flex-wrap: wrap;
+    max-width: 40vh;
+}               /* top */
 
 button {
     display: flex;
@@ -89,4 +96,31 @@ button {
     font-weight: bold;
     padding: 6px 24px;
     align-self: flex-start;
+}               /* top */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 7vh 30vh;
+    height: 230px;
+}
+
+.info-header {
+    display: flex;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 1000;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border: 4px solid #3882F6;
+    border-radius: 8px;
 }
